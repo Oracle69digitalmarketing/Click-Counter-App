@@ -1,22 +1,27 @@
-// shared/counter.js
-export const MAX = 10;
-export const MIN = 0;
+export const MAX_LIMIT = 10;
 
-export const getInitialCount = () => {
-  const saved = localStorage.getItem("click-counter");
-  return saved ? parseInt(saved) : 0;
+export const playSound = (type) => {
+  const soundMap = {
+    increase: '/sounds/increase.mp3',
+    decrease: '/sounds/decrease.mp3',
+    reset: '/sounds/reset.mp3',
+  };
+
+  const src = soundMap[type];
+  if (!src) return;
+
+  const audio = new Audio(src);
+  audio.play();
 };
 
-export const saveCount = (count) => {
-  localStorage.setItem("click-counter", count);
+export const increaseCount = (count, limit = MAX_LIMIT) => {
+  if (count < limit) return count + 1;
+  return count;
 };
 
-export const playSound = (type, enabled) => {
-  if (!enabled) return;
-  const src = {
-    increase: "/sounds/increase.mp3",
-    decrease: "/sounds/decrease.mp3",
-    reset: "/sounds/reset.mp3",
-  }[type];
-  new Audio(src).play();
+export const decreaseCount = (count) => {
+  if (count > 0) return count - 1;
+  return count;
 };
+
+export const resetCount = () => 0;
