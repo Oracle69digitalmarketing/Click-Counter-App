@@ -1,0 +1,153 @@
+/* Base Styles for the App */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1a202c;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.bg-green-500 {
+  background-color: #48bb78;
+}
+
+.bg-green-600 {
+  background-color: #38a169;
+}
+
+.bg-red-500 {
+  background-color: #f56565;
+}
+
+.bg-red-600 {
+  background-color: #e53e3e;
+}
+
+.bg-gray-500 {
+  background-color: #a0aec0;
+}
+
+.bg-gray-600 {
+  background-color: #718096;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-blue-700 {
+  color: #2b6cb0;
+}
+
+.text-red-600 {
+  color: #e53e3e;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #38a169;
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #e53e3e;
+}
+
+.hover\:bg-gray-600:hover {
+  background-color: #718096;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.transform {
+  transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-red-600 {
+  color: #e53e3e;
+}
+
+.font-medium {
+  font-weight: 500;
+}
