@@ -1,0 +1,13 @@
+click-counter-app/
+├── shared/
+│   └── counter.js
+├── web/
+│   └── App.jsx
+│   └── main.jsx
+├── mobile/
+│   └── App.js (React Native)
+├── electron/
+│   └── electron.js
+├── public/
+│   └── sounds/
+├── package.json
